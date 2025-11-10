@@ -1,6 +1,11 @@
 **ICD Disease Surveillance Dashboard**
 The ICD Disease Surveillance Dashboard is a web application that provides a comprehensive visualization of disease data. This project was developed as a demonstration of data visualization and web development skills to simulate Communicable Diseases (CD) monitoring and analysis of the spread of various diseases, including COVID-19, tuberculosis, HIV, and more.
 
+**Dashboard View**
+
+![Dashboard Screenshot](./assets/dashboard.png)
+![Charts Screenshot](./assets/charts.png)
+
 **Features**
 
 -**Disease Selection:** Users can select the disease they want to analyze from a dropdown menu. -**Province Selection:** Users can choose to view data for a specific province or for all provinces. -**Time Range Selection:** Users can select the time range (last 3, 6, or 12 months) they want to analyze. -**Interactive Heatmap and Line Charts:** The dashboard displays two main visualizations:
@@ -36,34 +41,37 @@ This will start the development server and open the application in your default 
 **Project Structure**
 The project's main files and directories are structured as follows:
 
+```
 src/
 ├── components/
-│ ├── Charts/
-│ │ ├── BarChartComponent.jsx
-│ │ ├── index.jsx
-│ │ ├── LineChartComponent.jsx
-│ ├── Dashboard/
-│ │ ├── InteractiveFeatures.jsx
-│ ├── Filters/
-│ │ ├── DiseaseSelect.jsx
-│ │ └── index.jsx
-│ ├── Stats/
-│ │ ├── index.jsx
-│ │ └── StatCard.jsx
-│ └── ui/
-│ └── alert.jsx
-| ├── card.jsx
-| ├── loading-states.jsx
-| └── select.jsx
+│   ├── Charts/
+│   │   ├── BarChartComponent.jsx
+│   │   ├── index.jsx
+│   │   └── LineChartComponent.jsx
+│   ├── Dashboard/
+│   │   └── InteractiveFeatures.jsx
+│   ├── Filters/
+│   │   ├── DiseaseSelect.jsx
+│   │   └── index.jsx
+│   ├── Stats/
+│   │   ├── index.jsx
+│   │   └── StatCard.jsx
+│   └── ui/
+│       ├── alert.jsx
+│       ├── card.jsx
+│       ├── loading-states.jsx
+│       └── select.jsx
 ├── hooks/
-│ └── useDiseaseDashboard.js
+│   └── useDiseaseDashboard.js
 ├── pages/
-│ └── Dashboard.jsx
+│   └── Dashboard.jsx
 ├── services/
-│ └── diseaseDataService.js
+│   └── diseaseDataService.js
 ├── utils/
-│ └── mockData.jsx
+│   └── mockData.jsx
 └── App.jsx
+
+```
 
 -_src/components:_ Contains all the React components used in the application, organized into subfolders based on their functionality. -_src/hooks:_ Includes custom React hooks used throughout the application. -_src/pages:_ Holds the main page components, such as the Dashboard page. -_src/services:_ Provides the logic for fetching and processing the disease data. -_src/utils:_ Contains utility functions and mock data.
 
