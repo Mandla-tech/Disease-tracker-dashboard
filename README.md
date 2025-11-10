@@ -3,8 +3,8 @@ The ICD Disease Surveillance Dashboard is a web application that provides a comp
 
 **Dashboard View**
 
-![Dashboard Screenshot](./assets/dashboard.png)
-![Charts Screenshot](./assets/charts.png)
+![Dashboard Screenshot](./src/assets/dashboard.png)
+![Charts Screenshot](./src/assets/charts.png)
 
 **Features**
 
